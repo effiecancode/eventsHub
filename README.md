@@ -28,12 +28,13 @@ DELETE /events/{id}
 ```
 
 ## Technologies used
-Python
-Django : Backend framework
-PostgreSQL : Relational database for storing events data
-Docker : conteinerize the API
-AWS ECS : an AWS fully managed container service to deploy docker images
+* Python
+* Django : Backend framework
+* PostgreSQL : Relational database for storing events data
+* Docker : conteinerize the API
+* AWS ECS : an AWS fully managed container service to deploy docker images
 
 
 ## Project Architecture
 ## AWS deployment architecture
+## API usage
