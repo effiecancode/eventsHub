@@ -1,6 +1,6 @@
 # eventsHub
 
-eventsHub is a robust Events Management System designed to optimize the processes of organizing and managing events such as conferences, workshops, and meetups.
+eventsHub is a robust Events Management System designed to optimize the process of organizing and managing events such as conferences, workshops, and meetups.
 
 
 ## Features:
