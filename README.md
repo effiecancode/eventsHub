@@ -1,0 +1,2 @@
+# eventsHub
+Django REST API
