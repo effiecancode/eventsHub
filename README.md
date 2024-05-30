@@ -1,6 +1,6 @@
 # eventsHub
 
-eventsHub is a CRUD system designed to optimize the processes of organizing and managing events such as conferences, workshops, and meetups.
+eventsHub is a robust Events Management System designed to optimize the processes of organizing and managing events such as conferences, workshops, and meetups.
 
 
 ## Features:
@@ -30,9 +30,11 @@ DELETE /events/{id}
 ## Technologies used
 * Python
 * Django : Backend framework
-* PostgreSQL : Relational database for storing events data
-* Docker : conteinerize the API
-* AWS ECS : an AWS fully managed container service to deploy docker images
+* Django Rest Framework : powerful toolkit for building Web APIs in Django.
+* Postgres : Relational database for storing events data
+* Docker : conteinerization platform
+* Docker Compose : tool for defining and running multi-container Docker applications
+* AWS ECS : a fully managed container orchestration service for deployment, scaling, and management of containerized applications
 
 
 ## Project Architecture
