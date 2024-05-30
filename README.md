@@ -40,6 +40,7 @@ DELETE /events/{id}
 ## Project Architecture
 
 ![](https://imgur.com/gallery/m-c-api-PZr5rx8)
+[](https://imgur.com/i2h7qlk)
 
 ## AWS deployment architecture
 ## API usage
