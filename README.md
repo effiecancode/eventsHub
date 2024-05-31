@@ -42,5 +42,5 @@ DELETE /events/{id}
 ![API](https://i.imgur.com/i2h7qlk.png)
 
 
-## AWS deployment architecture
+## AWS ECS deployment architecture
 ## API usage
