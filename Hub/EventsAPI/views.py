@@ -1,4 +1,4 @@
-# The apps controllers
+# The app's controllers
 
 from django.shortcuts import render
 from rest_framework.response import Response
@@ -7,21 +7,21 @@ from .models import Event
 from .serializers import EventSerializer
 
 
-#get all users
+#get all events
 @api_view(['GET'])
 def getEvents(request):
     events = Event.objects.all()
     serializer = EventSerializer(events, many=True)
     return Response(serializer.data)
 
-#get a single user
+#get a single event
 @api_view(['GET'])
 def getEvent(request, pk):
     event = Event.objects.get(id=pk)
     serializer = EventSerializer(event, many=False)
     return Response(serializer.data)
 
-#create a user
+#create an event
 @api_view(['POST'])
 def createEvent(request):
     serializer = EventSerializer(data=request.data)
@@ -31,7 +31,7 @@ def createEvent(request):
 
     return Response(serializer.data)
 
-#update a user
+#update an event
 @api_view(['PUT'])
 def updateEvent(request, pk):
     event = Event.objects.get(id=pk)
@@ -42,7 +42,7 @@ def updateEvent(request, pk):
 
     return Response(serializer.data)
 
-#delete a user
+#delete an event
 @api_view(['DELETE'])
 def deleteEvent(request, pk):
     event = Event.objects.get(id=pk)
