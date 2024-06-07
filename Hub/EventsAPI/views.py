@@ -28,8 +28,10 @@ def createEvent(request):
 
     if serializer.is_valid():
         serializer.save()
-
-    return Response(serializer.data)
+        return Response(serializer.data, status=201)
+    
+    print("Errors:", serializer.errors)
+    return Response(serializer.errors, status=400)
 
 #update an event
 @api_view(['PUT'])

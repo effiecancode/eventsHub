@@ -41,6 +41,12 @@ INSTALLED_APPS = [
     'rest_framework',
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_PARSER_CLASSES': [
+        'rest_framework.parsers.JSONParser',
+    ],
+}
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -77,7 +83,7 @@ WSGI_APPLICATION = 'Hub.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': os.environ.get('DB.DRIVER', 'django.db.backends.postresql'),
+        'ENGINE': os.environ.get('DB.DRIVER', 'django.db.backends.postgresql'),
         'NAME': os.environ.get('PG.DB', 'postgres'),
         'USER': os.environ.get('PG.USER', 'postgres'),
         'PASSWORD': os.environ.get('PG.PASSWORD', 'postgres'),
