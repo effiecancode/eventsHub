@@ -5,7 +5,7 @@ class Event(models.Model):
     description = models.TextField()
     location = models.CharField(max_length=200)
     date = models.DateField()
-    organizer = models.CharField(max_length=100)
+    organizer = models.CharField(max_length=200)
 
     def __str__(self):
         return self.title

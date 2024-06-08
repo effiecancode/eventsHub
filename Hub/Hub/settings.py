@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 import os
 from pathlib import Path
 
+import dotenv
+dotenv.load_dotenv()
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -81,6 +85,8 @@ WSGI_APPLICATION = 'Hub.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+
+
 DATABASES = {
     'default': {
         'ENGINE': os.environ.get('DB.DRIVER', 'django.db.backends.postgresql'),
@@ -91,6 +97,7 @@ DATABASES = {
         'PORT': os.environ.get('PG.PORT', '5432'),
     }
 }
+
 
 
 # Password validation
