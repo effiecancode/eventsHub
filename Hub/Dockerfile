@@ -7,6 +7,10 @@ ENV PYTHONUNBUFFERED 1
 # Set work directory
 WORKDIR /app
 
+# copy .env to container
+# Copy .env file to the container
+COPY .env .env
+
 # Install dependencies
 COPY requirements.txt .
 
