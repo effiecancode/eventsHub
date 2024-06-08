@@ -29,20 +29,23 @@ def createEvent(request):
     if serializer.is_valid():
         serializer.save()
         return Response(serializer.data, status=201)
-    
+
     print("Errors:", serializer.errors)
     return Response(serializer.errors, status=400)
 
 #update an event
 @api_view(['PUT'])
 def updateEvent(request, pk):
-    event = Event.objects.get(id=pk)
-    serializer = EventSerializer(instance=event, data=request.data)
+    try:
+        event = Event.objects.get(id=pk)
+    except Event.DoesNotExist:
+        return Response(status=404)
 
+    serializer = EventSerializer(instance=event, data=request.data)
     if serializer.is_valid():
         serializer.save()
-
-    return Response(serializer.data)
+        return Response(serializer.data)
+    return Response(serializer.errors, status=400)
 
 #delete an event
 @api_view(['DELETE'])
