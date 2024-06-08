@@ -3,7 +3,7 @@ version: '3.9'
 
 services:
   djangoapp:
-    container_name: eventshub
+    container_name: djangoapp
     build: .
     ports:
       - "8000:8000"
