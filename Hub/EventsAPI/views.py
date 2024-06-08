@@ -50,9 +50,11 @@ def updateEvent(request, pk):
 #delete an event
 @api_view(['DELETE'])
 def deleteEvent(request, pk):
-    event = Event.objects.get(id=pk)
-    event.delete()
+    try:
+        event = Event.objects.get(id=pk)
+    except Event.DoesNotExist:
+        return Response(status=404)
 
-    return Response('User was deleted')
+    return Response('Event was deleted', status=204)
 
 
