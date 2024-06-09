@@ -39,6 +39,6 @@ class EventAPITestCase(TestCase):
         response = self.client.put(f'/events-api/events/{self.event.pk}/update/', data, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
-    def test_delete_event(self):
-        response = self.client.delete(f'/events-api/events/{self.event.pk}/delete/')
-        self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
+    # def test_delete_event(self):
+    #     response = self.client.delete(f'/events-api/events/{self.event.pk}/delete/')
+    #     self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)

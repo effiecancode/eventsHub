@@ -57,7 +57,7 @@ Tableplus: Handle database management, test connection between containers.
 * Getting started:
     1. Clone the repo: git clone https://github.com/effiecancode/eventsHub.git
     2. Navigate to project directory: cd Hub
-    3. Build and Run Containers: docker-compose build then docker-compose up
+    3. Build and Run Containers: docker-compose build && docker-compose up
     4. Test Api: Use postman or Curl
 
     5. Explore APIs running on aws on:
