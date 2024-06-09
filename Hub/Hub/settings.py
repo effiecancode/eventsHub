@@ -29,8 +29,16 @@ SECRET_KEY = 'django-insecure--vqfmga^q$%am2_2tz4js%*mwn6mu%zxhnpx7f11(ikf)dtd1m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'eventshub-dev-alb-1406608266.us-east-1.elb.amazonaws.com',
+    '127.0.0.1',
+    'localhost',
+    '*',
+]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://eventshub-dev-alb-1406608266.us-east-1.elb.amazonaws.com'
+]
 
 # Application definition
 
