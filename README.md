@@ -32,7 +32,7 @@ DELETE /events/{id}
 * Django : Backend framework
 * Django Rest Framework : powerful toolkit for building Web APIs in Django.
 * Postgres : Relational database for storing events data
-* Docker : conteinerization platform
+* Docker : conteinarization platform
 * Docker Compose : tool for defining and running multi-container Docker applications
 * AWS ECR: Amazon Elastic Container Registry - fully managed Docker container registry to store, manage, and deploy Docker container images
 * AWS ECS : mazon Elastic Container Service - fully managed container orchestration service for deployment, scaling, and management of containerized applications
@@ -40,8 +40,8 @@ DELETE /events/{id}
 * Terraform: Infrastructure as Code (IaC) tool Used for provisioning and managing infrastructure on AWS
 
 # Helper Tools:
-Postman: API testing tool
-Tableplus: Handle database management, test connection between containers.
+* Postman: API testing tool
+* Tableplus: Handle database management, test connection between containers.
 
 
 
@@ -55,11 +55,11 @@ Tableplus: Handle database management, test connection between containers.
 
 ## API usage
 * Getting started:
-    1. Clone the repo: git clone https://github.com/effiecancode/eventsHub.git
-    2. Navigate to project directory: cd Hub
-    3. Build and Run Containers: docker-compose build && docker-compose up
-    4. Test Api: Use postman or Curl
+     * * Clone the repo: git clone https://github.com/effiecancode/eventsHub.git
+     * * Navigate to project directory: cd Hub
+     * * Build and Run Containers: docker-compose build && docker-compose up
+     * * Test API: Use postman or Curl
 
-    5. Explore APIs running on aws on:
-    * https://eventshub-dev-alb-533225746.us-east-1.elb.amazonaws.com or
-    * https://effiecancode.buzz
+* Explore APIs running on aws on:
+    * * https://eventshub-dev-alb-533225746.us-east-1.elb.amazonaws.com or
+    * * https://effiecancode.buzz
