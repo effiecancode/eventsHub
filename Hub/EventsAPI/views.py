@@ -51,6 +51,6 @@ def updateEvent(request, pk):
 @api_view(['DELETE'])
 def deleteEvent(request, pk):
         event = Event.objects.get(id=pk)
-        Event.delete()
+        event.delete()
 
         return Response('Event was deleted')
