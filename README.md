@@ -51,7 +51,7 @@ Tableplus: Handle database management, test connection between containers.
 
 
 ## AWS ECS deployment architecture
-![AWS ECS](https://i.imgur.com/8QkunmO.png)
+![AWS ECS](https://i.imgur.com/YqdXKdy.png)
 
 ## API usage
 * Getting started:
