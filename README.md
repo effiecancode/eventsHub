@@ -39,7 +39,7 @@ DELETE /events/{id}
 * AWS RDS : Amazon Relational Database Service - to set up, operate, and scale a relational database in the cloud
 * Terraform: Infrastructure as Code (IaC) tool Used for provisioning and managing infrastructure on AWS
 
-# Helper Tools:
+## Helper Tools:
 * Postman: API testing tool
 * Tableplus: Handle database management, test connection between containers.
 
