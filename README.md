@@ -61,5 +61,5 @@ DELETE /events/{id}
      * * Test API: Use postman or Curl
 
 * Explore APIs running on aws on:
-    * * https://eventshub-dev-alb-533225746.us-east-1.elb.amazonaws.com or
+    * * https://eventshub-dev-alb-533225746.us-east-1.elb.amazonaws.com//events-api/events/ or
     * * https://effiecancode.buzz
